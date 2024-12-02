@@ -92,22 +92,29 @@ input {
 }
 
 .list ul {
-  list-style: none;
-  width: 80%;
-  overflow: auto;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.2rem;
-  justify-content: center;
-  align-content: start;
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 20px; /* Indents the list */
 }
 
 .list li {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
+  margin-bottom: 10px; /* Adds space between list items */
+  font-size: 16px; /* Adjusts font size */
 }
+
+.list button {
+  margin-left: 10px;
+  background-color: #f44336; /* Red button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.list button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
 
 input[type="checkbox"] {
   height: 2rem;
